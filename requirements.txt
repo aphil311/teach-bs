@@ -1,3 +1,4 @@
 language_tool_python
 transformers
 torch
+wordfreq

@@ -3,6 +3,7 @@ from transformers import AutoTokenizer, AutoModelForMaskedLM
 import torch
 import numpy as np
 import spacy
+import wordfreq
 
 tool = language_tool_python.LanguageTool('en-US')
 model_name="distilbert-base-multilingual-cased"
@@ -12,7 +13,10 @@ model.eval()
 
 nlp = spacy.load("en_core_web_sm")
 
-def pseudo_perplexity(text, max_len=128):
+def __get_word_pr_score(word, lang="en") -> list[float]:
+    return -np.log(wordfreq.word_frequency(word, lang) + 1e-12)
+
+def pseudo_perplexity(text, threshold=20, max_len=128):
     """
     We want to return
     {
@@ -26,67 +30,87 @@ def pseudo_perplexity(text, max_len=128):
         ]
     }
     """
-    input_ids = tokenizer.encode(text, return_tensors="pt")[0]
+    encoding = tokenizer(text, return_tensors="pt", return_offsets_mapping=True)
+    input_ids = encoding["input_ids"][0]
+    print(input_ids)
+    offset_mapping = encoding["offset_mapping"][0]
+    print(offset_mapping)
+    tokens = tokenizer.convert_ids_to_tokens(input_ids)
 
-    if len(input_ids) > max_len:
-        raise ValueError(f"Input too long for model (>{max_len} tokens).")
+    # Group token indices by word based on offset mapping
+    word_groups = []
+    current_group = []
+
+    prev_end = None
+
+    for i, (start, end) in enumerate(offset_mapping):
+        if input_ids[i] in tokenizer.all_special_ids:
+            continue  # skip special tokens like [CLS] and [SEP]
+
+        if prev_end is not None and start > prev_end:
+            # Word boundary detected → start new group
+            word_groups.append(current_group)
+            current_group = [i]
+        else:
+            current_group.append(i)
+
+        prev_end = end
+
+    # Append final group
+    if current_group:
+        word_groups.append(current_group)
 
     loss_values = []
+    tok_loss = []
+    for group in word_groups:
+        if group[0] == 0 or group[-1] == len(input_ids) - 1:
+            continue  # skip [CLS] and [SEP]
 
-    for i in range(1, len(input_ids) - 1):  # skip [CLS] and [SEP]
-        masked_input = input_ids.clone()
-        masked_input[i] = tokenizer.mask_token_id
+        masked = input_ids.clone()
+        for i in group:
+            masked[i] = tokenizer.mask_token_id
 
         with torch.no_grad():
-            outputs = model(masked_input.unsqueeze(0))
-            logits = outputs.logits[0, i]
-            probs = torch.softmax(logits, dim=-1)
+            outputs = model(masked.unsqueeze(0))
+            logits = outputs.logits[0]
 
-        true_token_id = input_ids[i].item()
-        prob_true_token = probs[true_token_id].item()
-        log_prob = np.log(prob_true_token + 1e-12)
-        loss_values.append(-log_prob)
+        log_probs = []
+        for i in group:
+            probs = torch.softmax(logits[i], dim=-1)
+            true_token_id = input_ids[i].item()
+            prob = probs[true_token_id].item()
+            log_probs.append(np.log(prob + 1e-12))
+            tok_loss.append(-np.log(prob + 1e-12))
+
+        word_loss = -np.sum(log_probs) / len(log_probs)
+        word = tokenizer.decode(input_ids[group[0]])
+        word_loss -= 0.6 * __get_word_pr_score(word)
+        loss_values.append(word_loss)
     
-    # get longest sequence of tokens with perplexity over some threshold
-    threshold = 12  # Define a perplexity threshold
-    longest_start, longest_end = 0, 0
-    current_start, current_end = 0, 0
-    max_length = 0
-    curr_loss = 0
+    print(loss_values)
 
-    for i, loss in enumerate(loss_values):
-        if loss > threshold:
-            if current_start == current_end:  # Start a new sequence
-                current_start = i
-            current_end = i + 1
-            curr_loss = loss
-        else:
-            if current_end - current_start > max_length:
-                longest_start, longest_end = current_start, current_end
-                max_length = current_end - current_start
-            current_start, current_end = 0, 0
+    errors = []
+    for i, l in enumerate(loss_values):
+        if l < threshold:
+            continue
+        errors.append({
+            "start": i,
+            "end": i,
+            "message": f"Perplexity {l} over threshold {threshold}"
+        })
 
-    if current_end - current_start > max_length:  # Check the last sequence
-        longest_start, longest_end = current_start, current_end
-
-    longest_sequence = (longest_start, longest_end)
-
-    ppl = np.exp(np.mean(loss_values))
+    print(tok_loss)
+    s_ppl = np.mean(tok_loss)
+    print(s_ppl)
 
     res = {
-        "score": __fluency_score_from_ppl(ppl),
-        "errors": [
-            {
-                "start": longest_sequence[0],
-                "end": longest_sequence[1],
-                "message": f"Perplexity above threshold: {curr_loss}"
-            }
-        ]
+        "score": __fluency_score_from_ppl(s_ppl),
+        "errors": errors
     }
 
     return res
 
-def __fluency_score_from_ppl(ppl, midpoint=20, steepness=0.3):
+def __fluency_score_from_ppl(ppl, midpoint=8, steepness=0.3):
     """
     Use a logistic function to map perplexity to 0–100.
     Midpoint is the PPL where score is 50.
@@ -135,12 +159,12 @@ def grammar_errors(text) -> tuple[int, list[str]]:
 
     return res
 
-def __grammar_score_from_prob(error_ratio, steepness=10):
+def __grammar_score_from_prob(error_ratio):
     """
     Transform the number of errors divided by words into a score from 0 to 100.
     Steepness controls how quickly the score drops as errors increase.
     """
-    score = 100 / (1 + np.exp(steepness * error_ratio))
+    score = 100*(1-error_ratio)
     return round(score, 2)
 
 
