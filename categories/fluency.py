@@ -61,7 +61,6 @@ def pseudo_perplexity(text, threshold=20, max_len=128):
         word_groups.append(current_group)
 
     loss_values = []
-    tok_loss = []
     for group in word_groups:
         if group[0] == 0 or group[-1] == len(input_ids) - 1:
             continue  # skip [CLS] and [SEP]
@@ -80,14 +79,11 @@ def pseudo_perplexity(text, threshold=20, max_len=128):
             true_token_id = input_ids[i].item()
             prob = probs[true_token_id].item()
             log_probs.append(np.log(prob + 1e-12))
-            tok_loss.append(-np.log(prob + 1e-12))
 
         word_loss = -np.sum(log_probs) / len(log_probs)
         word = tokenizer.decode(input_ids[group[0]])
         word_loss -= 0.6 * __get_word_pr_score(word)
         loss_values.append(word_loss)
-    
-    # print(loss_values)
 
     errors = []
     for i, l in enumerate(loss_values):
@@ -99,12 +95,10 @@ def pseudo_perplexity(text, threshold=20, max_len=128):
             "message": f"Perplexity {l} over threshold {threshold}"
         })
 
-    # print(tok_loss)
-    s_ppl = np.mean(tok_loss)
-    # print(s_ppl)
+    error_rate = len(errors) / len(loss_values)
 
     res = {
-        "score": __fluency_score_from_ppl(s_ppl),
+        "score": __grammar_score_from_prob(error_rate),
         "errors": errors
     }
 
@@ -129,7 +123,6 @@ def grammar_errors(text) -> tuple[int, list[str]]:
     """
 
     matches = tool.check(text)
-    grammar_score = len(matches)/len(text.split())
 
     r = []
     for match in matches:
@@ -150,7 +143,10 @@ def grammar_errors(text) -> tuple[int, list[str]]:
         r.append({"start": start, "end": end, "message": match.message})
 
     struct_err = __check_structural_grammar(text)
-    r.extend(struct_err)
+    for e in struct_err:
+        r.append(e)
+
+    grammar_score = len(r) / len(text.split())
 
     res = {
         "score": __grammar_score_from_prob(grammar_score),
