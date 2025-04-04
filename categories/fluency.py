@@ -32,9 +32,9 @@ def pseudo_perplexity(text, threshold=20, max_len=128):
     """
     encoding = tokenizer(text, return_tensors="pt", return_offsets_mapping=True)
     input_ids = encoding["input_ids"][0]
-    print(input_ids)
+    # print(input_ids)
     offset_mapping = encoding["offset_mapping"][0]
-    print(offset_mapping)
+    # print(offset_mapping)
     tokens = tokenizer.convert_ids_to_tokens(input_ids)
 
     # Group token indices by word based on offset mapping
@@ -87,7 +87,7 @@ def pseudo_perplexity(text, threshold=20, max_len=128):
         word_loss -= 0.6 * __get_word_pr_score(word)
         loss_values.append(word_loss)
     
-    print(loss_values)
+    # print(loss_values)
 
     errors = []
     for i, l in enumerate(loss_values):
@@ -99,9 +99,9 @@ def pseudo_perplexity(text, threshold=20, max_len=128):
             "message": f"Perplexity {l} over threshold {threshold}"
         })
 
-    print(tok_loss)
+    # print(tok_loss)
     s_ppl = np.mean(tok_loss)
-    print(s_ppl)
+    # print(s_ppl)
 
     res = {
         "score": __fluency_score_from_ppl(s_ppl),
