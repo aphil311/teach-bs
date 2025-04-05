@@ -27,8 +27,8 @@ which applies a downward adjustment to the loss for rare words where $\alpha$ is
 
 $$\mathcal J_{\text{adj}} = \frac {1} {\mathbb W} \sum_{w \in \mathbb W} \mathcal L_w.$$
 
-We then generate a fluency score $\text{FS}$ from $0$ to $100$ using the logistic function
+We then generate a fluency score $\textbf{FS}$ from $0$ to $100$ using the logistic function
 
-$$\text{FS}_{\mathbb W} = \frac{100}{1+\exp(s \times \mathcal J_{\text{adj}} - m)}$$
+$$\textbf{FS}_{\mathbb W} = \frac{100}{1+\exp(s \times \mathcal J_{\text{adj}} - m)}$$
 
 where $s$ is some steepness factor and $m$ is the midpoint (where the score should be $50$).
