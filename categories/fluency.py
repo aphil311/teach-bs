@@ -5,85 +5,125 @@ import numpy as np
 import spacy
 import wordfreq
 
+# setup global variables on import (bad practice, but whatever)
+#--------------------------------------------------------------
+
+# grammar checker
 tool = language_tool_python.LanguageTool('en-US')
+
+# masked language model and tokenizer from huggingface
 model_name="distilbert-base-multilingual-cased"
-tokenizer = AutoTokenizer.from_pretrained(model_name)
 model = AutoModelForMaskedLM.from_pretrained(model_name)
 model.eval()
+tokenizer = AutoTokenizer.from_pretrained(model_name)   # tokenizer
 
+# spacy model for parsing
 nlp = spacy.load("en_core_web_sm")
 
-def __get_word_pr_score(word, lang="en") -> list[float]:
+def __get_rarity(word, lang="en") -> float:
+    """
+    Returns the rarity of a word in the given language. word_freq retuns a value 
+    between 0 and 1, where 1 is the most common word. Therefore, taking the log results
+    in a value between 0 (log 1 = 0) and -27.63 (log 1e-12). We then negate it so super
+    rare words have a high score and common words have a low score.
+
+    Parameters:
+        word (str): The word to check.
+        lang (str): The language to check. Default is "en".
+    
+    Returns:
+        float: The rarity of the word.
+    """
     return -np.log(wordfreq.word_frequency(word, lang) + 1e-12)
 
-def pseudo_perplexity(text, threshold=20, max_len=128):
+def __produce_groupings(offset_mapping, input_ids):
     """
-    We want to return
-    {
-        "score": normalized value from 0 to 100,
-        "errors": [
-            {
-                "start": word index,
-                "end": word index,
-                "message": "error message"
-            }
-        ]
-    }
-    """
-    encoding = tokenizer(text, return_tensors="pt", return_offsets_mapping=True)
-    input_ids = encoding["input_ids"][0]
-    # print(input_ids)
-    offset_mapping = encoding["offset_mapping"][0]
-    # print(offset_mapping)
-    tokens = tokenizer.convert_ids_to_tokens(input_ids)
+    Produce groupings of tokens that are part of the same word.
 
-    # Group token indices by word based on offset mapping
-    word_groups = []
+    Parameters:
+        offset_mapping (list): The offset mapping of the tokens.
+        input_ids (list): The input ids of the tokens.
+    
+    Returns:
+        list: A list of groupings of tokens.
+    """
+    # Produce groupings of tokens that are part of the same word
+    res = []
     current_group = []
-
     prev_end = None
-
     for i, (start, end) in enumerate(offset_mapping):
         if input_ids[i] in tokenizer.all_special_ids:
             continue  # skip special tokens like [CLS] and [SEP]
-
         if prev_end is not None and start > prev_end:
             # Word boundary detected → start new group
-            word_groups.append(current_group)
+            res.append(current_group)
             current_group = [i]
         else:
             current_group.append(i)
-
         prev_end = end
-
     # Append final group
     if current_group:
-        word_groups.append(current_group)
+        res.append(current_group)
+    
+    return res
 
+def pseudo_perplexity(text, threshold=4, max_len=128):
+    """
+    Calculate the pseudo-perplexity of a text using a masked language model. Return all
+    words that exceed a threshold of "adjusted awkwardness". The threshold is a measure
+    in terms of log probability of the word.
+
+    Parameters:
+        text (str): The text to check.
+        threshold (float): The threshold for awkwardness. Default is 4.
+        max_len (int): The maximum length of the text. Default is 128.
+    
+    Returns:
+        dict: A dictionary containing the score and errors.
+    """
+
+    # Tokenize the text and produce groupings
+    encoding = tokenizer(text, return_tensors="pt", return_offsets_mapping=True)
+    input_ids = encoding["input_ids"][0]
+    offset_mapping = encoding["offset_mapping"][0]
+    tokens = tokenizer.convert_ids_to_tokens(input_ids)
+    word_groups = __produce_groupings(offset_mapping, input_ids)
+
+    # Calculate the loss for each word group
     loss_values = []
     for group in word_groups:
+        # Skip special tokens (CLS and SEP)
         if group[0] == 0 or group[-1] == len(input_ids) - 1:
-            continue  # skip [CLS] and [SEP]
+            continue 
 
+        # Mask the word group
         masked = input_ids.clone()
         for i in group:
             masked[i] = tokenizer.mask_token_id
 
+        # Get the model output distribution
         with torch.no_grad():
             outputs = model(masked.unsqueeze(0))
             logits = outputs.logits[0]
 
         log_probs = []
         for i in group:
+            # Get the probability of the true token
             probs = torch.softmax(logits[i], dim=-1)
             true_token_id = input_ids[i].item()
             prob = probs[true_token_id].item()
+            # Append the loss of the true token
             log_probs.append(np.log(prob + 1e-12))
 
+        # Calculate the loss for the entire word group
         word_loss = -np.sum(log_probs) / len(log_probs)
+        # Adjust the loss based on the rarity of the word
         word = tokenizer.decode(input_ids[group[0]])
-        word_loss -= 0.6 * __get_word_pr_score(word)
+        word_loss -= 0.6 * __get_rarity(word) # subtract rarity (rare words reduce loss)
         loss_values.append(word_loss)
+
+    # Structure the results for output
+    average_loss = np.mean(loss_values)
 
     errors = []
     for i, l in enumerate(loss_values):
@@ -92,36 +132,43 @@ def pseudo_perplexity(text, threshold=20, max_len=128):
         errors.append({
             "start": i,
             "end": i,
-            "message": f"Perplexity {l} over threshold {threshold}"
+            "message": f"Adjusted liklihood {l} over threshold {threshold}"
         })
 
-    error_rate = len(errors) / len(loss_values)
-
     res = {
-        "score": __grammar_score_from_prob(error_rate),
+        "score": __fluency_score(average_loss),
         "errors": errors
     }
 
     return res
 
-def __fluency_score_from_ppl(ppl, midpoint=8, steepness=0.3):
+def __fluency_score(loss, midpoint=5, steepness=0.3):
     """
-    Use a logistic function to map perplexity to 0–100.
-    Midpoint is the PPL where score is 50.
-    Steepness controls curve sharpness.
+    Transform the loss into a score from 0 to 100. Steepness controls how quickly the 
+    score drops as loss increases and midpoint controls the loss at which the score is
+    50.
+
+    Parameters:
+        loss (float): The loss to transform.
+        midpoint (float): The loss at which the score is 50. Default is 5.
+        steepness (float): The steepness of the curve. Default is 0.3.
+    
+    Returns:
+        float: The score from 0 to 100.
     """
-    score = 100 / (1 + np.exp(steepness * (ppl - midpoint)))
+    score = 100 / (1 + np.exp(steepness * (loss - midpoint)))
     return round(score, 2)
 
 def grammar_errors(text) -> tuple[int, list[str]]:
     """
+    Check the grammar of a text using a grammar checker and a structural grammar check.
 
-    Returns
-      int: number of grammar errors
-      list: grammar errors
-        tuple: (start, end, error message)
+    Parameters:
+        text (str): The text to check.
+    
+    Returns:
+        dict: A dictionary containing the score and errors.
     """
-
     matches = tool.check(text)
 
     r = []
@@ -221,3 +268,10 @@ def __check_structural_grammar(text):
                 })
 
     return issues
+
+
+def main():
+    pass
+
+if __name__ == "__main__":
+    main()
