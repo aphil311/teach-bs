@@ -1,6 +1,7 @@
 import string
 
 import torch
+import numpy as np
 from scipy.spatial.distance import cosine
 from simalign import SentenceAligner
 from transformers import AutoModel, AutoTokenizer
@@ -97,7 +98,9 @@ def __bertscore_to_percentage(similarity: float) -> float:
         int: A score from 0 to 100.
     """
     # Scale the similarity score from [-1, 1] range to [0, 100] (rarely negative)
-    scaled_score = max(((similarity) / 2) * 100, 0)
+    # Logistic function: 100 / (1 + exp(-k * (x - 0.5))), where k controls steepness
+    k = 35  # Steepness parameter - higher values create a sharper transition
+    scaled_score = 100 / (1 + np.exp(-k * (similarity - 0.65)))
     return round(scaled_score, 2)
 
 
