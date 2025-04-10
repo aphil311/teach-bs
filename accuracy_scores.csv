@@ -1,100 +1,100 @@
 German,English,Accuracy Score
-Ich bin müde.,I am tired.,99.99
-Das ist mein Buch.,That is my book.,100.0
-Er hat einen Hund.,He has a dog.,100.0
-Wir gehen nach Hause.,We are going home.,100.0
-Sie liest ein Buch.,She is reading a book.,99.97
-Ich liebe Schokolade.,I love chocolate.,100.0
-Hast du Geschwister?,Do you have siblings?,99.98
-Heute ist es kalt.,It is cold today.,100.0
-Wo ist der Bahnhof?,Where is the train station?,99.99
-Das Wetter ist schön.,The weather is nice.,100.0
-Er arbeitet im Büro.,He works in the office.,100.0
-Ich trinke Wasser.,I am drinking water.,100.0
-Sie tanzt gerne.,She likes dancing.,99.98
-Kannst du mir helfen?,Can you help me?,100.0
-Wir spielen Fußball.,We are playing soccer.,100.0
-Das Auto ist neu.,The car is new.,100.0
-Ich habe Hunger.,I am hungry.,100.0
-Guten Morgen!,Good morning!,100.0
-Er spricht Deutsch.,He speaks German.,100.0
-Ich mag Katzen.,I like cats.,100.0
-Sie kocht gern.,She likes cooking.,99.84
-Der Apfel ist rot.,The apple is red.,100.0
-Das Fenster ist offen.,The window is open.,100.0
-Ich wohne in Berlin.,I live in Berlin.,100.0
-Was machst du?,What are you doing?,100.0
-Er spielt Gitarre.,He plays guitar.,100.0
-Wir fahren morgen.,We are leaving tomorrow.,99.96
-Ich verstehe nicht.,I don't understand.,97.59
-Die Katze schläft.,The cat is sleeping.,100.0
-Sie ist meine Freundin.,She is my friend.,100.0
-Ich höre Musik.,I am listening to music.,99.98
-Das Haus ist groß.,The house is big.,100.0
-Er geht zur Schule.,He goes to school.,100.0
-Hast du Zeit?,Do you have time?,100.0
-Ich schreibe einen Brief.,I am writing a letter.,100.0
-Die Tür ist geschlossen.,The door is closed.,100.0
-Sie arbeitet viel.,She works a lot.,100.0
-Ich sehe einen Vogel.,I see a bird.,100.0
-Das Kind lacht.,The child is laughing.,100.0
-Wo wohnst du?,Where do you live?,100.0
-Ich lerne Deutsch.,I am learning German.,99.98
-Kann ich helfen?,Can I help?,100.0
-Das ist mein Bruder.,That is my brother.,100.0
-Sie hat lange Haare.,She has long hair.,100.0
-Wir sind müde.,We are tired.,100.0
-Der Hund bellt.,The dog is barking.,99.94
-Ich esse einen Apfel.,I am eating an apple.,100.0
-Wie heißt du?,What is your name?,99.99
-Mein Name ist Anna.,My name is Anna.,100.0
-Ich liebe dich.,I love you.,100.0
-Es ist sehr spät.,It is very late.,100.0
-Ich habe keine Zeit.,I have no time.,100.0
-Er liest die Zeitung.,He is reading the newspaper.,100.0
-Sie singt ein Lied.,She is singing a song.,100.0
-Ich sehe fern.,I am watching TV.,96.08
-Das ist einfach.,That is easy.,99.99
-Ich gehe einkaufen.,I am going shopping.,99.99
-Wo arbeitest du?,Where do you work?,100.0
-Ich arbeite im Krankenhaus.,I work at the hospital.,100.0
-Sie hat blaue Augen.,She has blue eyes.,100.0
-Wir essen zu Abend.,We are having dinner.,99.98
-Der Himmel ist blau.,The sky is blue.,100.0
-Was kostet das?,How much does that cost?,99.85
-Ich nehme das.,I'll take that.,78.48
-Ich bin krank.,I am sick.,99.99
-Es tut mir leid.,I'm sorry.,100.0
-Ich verstehe dich.,I understand you.,100.0
-Mach das Fenster zu.,Close the window.,99.96
-Wie spät ist es?,What time is it?,99.97
-Ich bin zu Hause.,I am at home.,100.0
-Gute Nacht!,Good night!,100.0
-Sie tanzen gern.,They like to dance.,99.98
-Ich gehe spazieren.,I am going for a walk.,99.98
-Der Kaffee ist heiß.,The coffee is hot.,100.0
-Woher kommst du?,Where are you from?,99.97
-Ich komme aus Deutschland.,I am from Germany.,100.0
-Sie hat ein schönes Lächeln.,She has a beautiful smile.,100.0
-Ich brauche Hilfe.,I need help.,100.0
-Das ist mein Vater.,That is my father.,100.0
-Sie ist meine Mutter.,She is my mother.,100.0
-Ich liebe meine Familie.,I love my family.,100.0
-Heute ist Montag.,Today is Monday.,100.0
-Ich bin glücklich.,I am happy.,100.0
-Er ist traurig.,He is sad.,99.99
-Wir lernen zusammen.,We are learning together.,99.99
-Das ist interessant.,That is interesting.,100.0
-Ich bin bereit.,I am ready.,100.0
-Er ist mein Lehrer.,He is my teacher.,100.0
-Der Ball ist rund.,The ball is round.,100.0
-Ich gehe zur Arbeit.,I am going to work.,99.98
-Sie trägt ein rotes Kleid.,She is wearing a red dress.,100.0
-Ich mag deinen Stil.,I like your style.,99.99
-Er lacht laut.,He is laughing loudly.,99.96
-Wir sehen uns morgen.,See you tomorrow.,100.0
-Ich wünsche dir viel Glück.,I wish you good luck.,100.0
-Bitte sei leise.,Please be quiet.,100.0
-Ich habe es vergessen.,I forgot it.,100.0
-Es ist nicht wichtig.,It is not important.,100.0
-Können wir reden?,Can we talk?,100.0
+Ich bin müde.,I am tired.,0.93
+Das ist mein Buch.,That is my book.,0.97
+Er hat einen Hund.,He has a dog.,0.97
+Wir gehen nach Hause.,We are going home.,0.95
+Sie liest ein Buch.,She is reading a book.,0.88
+Ich liebe Schokolade.,I love chocolate.,0.97
+Hast du Geschwister?,Do you have siblings?,0.89
+Heute ist es kalt.,It is cold today.,0.96
+Wo ist der Bahnhof?,Where is the train station?,0.93
+Das Wetter ist schön.,The weather is nice.,0.95
+Er arbeitet im Büro.,He works in the office.,0.97
+Ich trinke Wasser.,I am drinking water.,0.94
+Sie tanzt gerne.,She likes dancing.,0.9
+Kannst du mir helfen?,Can you help me?,0.97
+Wir spielen Fußball.,We are playing soccer.,0.94
+Das Auto ist neu.,The car is new.,0.95
+Ich habe Hunger.,I am hungry.,0.96
+Guten Morgen!,Good morning!,0.99
+Er spricht Deutsch.,He speaks German.,0.95
+Ich mag Katzen.,I like cats.,0.95
+Sie kocht gern.,She likes cooking.,0.83
+Der Apfel ist rot.,The apple is red.,0.94
+Das Fenster ist offen.,The window is open.,0.95
+Ich wohne in Berlin.,I live in Berlin.,0.97
+Was machst du?,What are you doing?,0.95
+Er spielt Gitarre.,He plays guitar.,0.96
+Wir fahren morgen.,We are leaving tomorrow.,0.87
+Ich verstehe nicht.,I don't understand.,0.76
+Die Katze schläft.,The cat is sleeping.,0.95
+Sie ist meine Freundin.,She is my friend.,0.96
+Ich höre Musik.,I am listening to music.,0.89
+Das Haus ist groß.,The house is big.,0.95
+Er geht zur Schule.,He goes to school.,0.98
+Hast du Zeit?,Do you have time?,0.94
+Ich schreibe einen Brief.,I am writing a letter.,0.93
+Die Tür ist geschlossen.,The door is closed.,0.97
+Sie arbeitet viel.,She works a lot.,0.94
+Ich sehe einen Vogel.,I see a bird.,0.97
+Das Kind lacht.,The child is laughing.,0.96
+Wo wohnst du?,Where do you live?,0.94
+Ich lerne Deutsch.,I am learning German.,0.9
+Kann ich helfen?,Can I help?,0.96
+Das ist mein Bruder.,That is my brother.,0.98
+Sie hat lange Haare.,She has long hair.,0.97
+Wir sind müde.,We are tired.,0.93
+Der Hund bellt.,The dog is barking.,0.86
+Ich esse einen Apfel.,I am eating an apple.,0.94
+Wie heißt du?,What is your name?,0.91
+Mein Name ist Anna.,My name is Anna.,0.99
+Ich liebe dich.,I love you.,0.97
+Es ist sehr spät.,It is very late.,0.98
+Ich habe keine Zeit.,I have no time.,0.95
+Er liest die Zeitung.,He is reading the newspaper.,0.94
+Sie singt ein Lied.,She is singing a song.,0.95
+Ich sehe fern.,I am watching TV.,0.74
+Das ist einfach.,That is easy.,0.93
+Ich gehe einkaufen.,I am going shopping.,0.91
+Wo arbeitest du?,Where do you work?,0.94
+Ich arbeite im Krankenhaus.,I work at the hospital.,0.96
+Sie hat blaue Augen.,She has blue eyes.,0.97
+Wir essen zu Abend.,We are having dinner.,0.89
+Der Himmel ist blau.,The sky is blue.,0.96
+Was kostet das?,How much does that cost?,0.84
+Ich nehme das.,I'll take that.,0.69
+Ich bin krank.,I am sick.,0.92
+Es tut mir leid.,I'm sorry.,0.94
+Ich verstehe dich.,I understand you.,0.95
+Mach das Fenster zu.,Close the window.,0.88
+Wie spät ist es?,What time is it?,0.89
+Ich bin zu Hause.,I am at home.,0.95
+Gute Nacht!,Good night!,0.98
+Sie tanzen gern.,They like to dance.,0.9
+Ich gehe spazieren.,I am going for a walk.,0.9
+Der Kaffee ist heiß.,The coffee is hot.,0.97
+Woher kommst du?,Where are you from?,0.89
+Ich komme aus Deutschland.,I am from Germany.,0.95
+Sie hat ein schönes Lächeln.,She has a beautiful smile.,0.96
+Ich brauche Hilfe.,I need help.,0.94
+Das ist mein Vater.,That is my father.,0.97
+Sie ist meine Mutter.,She is my mother.,0.98
+Ich liebe meine Familie.,I love my family.,0.98
+Heute ist Montag.,Today is Monday.,0.97
+Ich bin glücklich.,I am happy.,0.96
+Er ist traurig.,He is sad.,0.93
+Wir lernen zusammen.,We are learning together.,0.92
+Das ist interessant.,That is interesting.,0.97
+Ich bin bereit.,I am ready.,0.96
+Er ist mein Lehrer.,He is my teacher.,0.98
+Der Ball ist rund.,The ball is round.,0.95
+Ich gehe zur Arbeit.,I am going to work.,0.89
+Sie trägt ein rotes Kleid.,She is wearing a red dress.,0.96
+Ich mag deinen Stil.,I like your style.,0.9
+Er lacht laut.,He is laughing loudly.,0.88
+Wir sehen uns morgen.,See you tomorrow.,0.95
+Ich wünsche dir viel Glück.,I wish you good luck.,0.96
+Bitte sei leise.,Please be quiet.,0.94
+Ich habe es vergessen.,I forgot it.,0.96
+Es ist nicht wichtig.,It is not important.,0.97
+Können wir reden?,Can we talk?,0.96

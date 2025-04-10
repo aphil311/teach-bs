@@ -77,7 +77,7 @@ def __get_bertscore(src_sentence: str, trg_sentence: str) -> float:
     return similarity
 
 
-def __bertscore_to_percentage(similarity: float) -> float:
+def __bertscore_to_percentage(similarity: float, debug: bool = False) -> float:
     """
     Convert the BERTScore cosine similarity to a percentage score (0-100).
 
@@ -89,8 +89,14 @@ def __bertscore_to_percentage(similarity: float) -> float:
     """
     # Scale the similarity score from [-1, 1] range to [0, 100] (rarely negative)
     # Logistic function: 100 / (1 + exp(-k * (x - 0.5))), where k controls steepness
-    k = 35  # Steepness parameter - higher values create a sharper transition
-    scaled_score = 100 / (1 + np.exp(-k * (similarity - 0.65)))
+    # k = 35  # Steepness parameter - higher values create a sharper transition
+
+    if debug:
+        scaled_score = similarity
+    else:
+        scaled_score = max(100 / (1 + np.exp(-11 * (similarity - 0.60))), 100 / (1 + np.exp(-5 * (similarity - 0.60))))
+
+    # scaled_score = similarity
     return round(scaled_score, 2)
 
 
