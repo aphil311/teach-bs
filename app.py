@@ -1,21 +1,51 @@
 import time
+import json
 
 import streamlit as st
 
 from categories.accuracy import *
+from categories.fluency import *
+import random
 
+# Set the sidebar title
+st.sidebar.title("DE-EN")
+
+def load_translations():
+    try:
+        with open("./translations.json", "r") as f:
+            return json.loads(f.read())
+    except Exception as e:
+        print(e)
+        return None
+
+if "translations" not in st.session_state:
+    st.session_state.translations = load_translations()
 
 def response_generator(prompt):
     source = st.session_state.german
     acc = accuracy(source, prompt)
+    ppl = pseudo_perplexity(prompt)
+    gre = grammar_errors(prompt)
 
-    response = "Your response is: " + str(acc["score"]) + "\n"
+    total_score = 0.5 * acc["score"] + 0.2 * gre["score"] + 0.3 * ppl["score"]
 
-    if acc["errors"]:
-        response += "Your errors are:\n"
+    response = "Your total translation score is: " + str(total_score) + "\n"
 
-        for error in acc["errors"]:
-            response += f" - {error['message']}\n"
+    acc_s = acc["score"]
+    response += f"\nYour accuracy score is {acc_s}:\n"
+
+    for error in acc["errors"]:
+        response += f" - {error['message']}\n"
+    
+    gre_s = gre["score"]
+    ppl_s = ppl["score"]
+    response += f"\nYour fluency score is {0.4 * gre_s + 0.6 * ppl_s}:\n"
+
+    for error in gre["errors"]:
+        response += f" - {error['message']}\n"
+    
+    for error in ppl["errors"]:
+        response += f" - {error['message']}\n"
 
     lines = response.split("\n")
     for line in lines:
@@ -27,7 +57,14 @@ def response_generator(prompt):
 
 
 def translation_generator():
-    st.session_state.german = "Danke shoen."
+    # Check if translations are available and not empty
+    if st.session_state.translations:
+        # Randomly select a translation from the list
+        st.session_state.german = random.choice(st.session_state.translations)["german"]
+    else:
+        st.error("No translations available.")
+        return
+
 
     message = (
         f"Please translate the following sentence into English:"
@@ -57,6 +94,16 @@ if "messages" not in st.session_state:
         }
     ]
     st.session_state.german = "Das ist ein Test."
+
+if "translations" not in st.session_state:
+    try:
+        with open("translations.json", "r") as f:
+            st.session_state.translations = json.loads(f.read())
+            print(st.session_state.translations)
+    except (FileNotFoundError, json.JSONDecodeError):
+        st.session_state.translations = None
+        # Create an empty translations dictionary if none exists
+        st.error("No previous translations found. Starting with an empty translation history.")
 
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:

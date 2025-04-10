@@ -112,8 +112,8 @@ def __get_alignment_score(src_sentence: str, trg_sentence: str) -> list:
     # Each method has a list of pairs indicating the indexes of aligned words (The alignments are zero-indexed).
     alignments = aligner.get_word_aligns(src_list, trg_list)
 
-    src_aligns = {x[0] for x in alignments["mwmf"]}
-    trg_aligns = {x[1] for x in alignments["mwmf"]}
+    src_aligns = {x[0] for x in alignments["inter"]}
+    trg_aligns = {x[1] for x in alignments["inter"]}
 
     mistranslations = []
     for i in range(len(src_list)):

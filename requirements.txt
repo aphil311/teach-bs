@@ -4,3 +4,5 @@ torch
 wordfreq
 simalign
 streamlit
+requests
+laser_encoders
