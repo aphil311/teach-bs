@@ -5,13 +5,15 @@ import numpy as np
 from scipy.spatial.distance import cosine
 from simalign import SentenceAligner
 from transformers import AutoModel, AutoTokenizer
+from laser_encoders import LaserEncoderPipeline
 
 # setup global variables on import (bad practice, but whatever)
 # --------------------------------------------------------------
 
 aligner = SentenceAligner(model="distilbert-base-multilingual-cased", layer=6)
-tokenizer = AutoTokenizer.from_pretrained("distilbert-base-multilingual-cased")
-model = AutoModel.from_pretrained("distilbert-base-multilingual-cased")
+
+de_encoder = LaserEncoderPipeline(lang="deu_Latn")
+en_encoder = LaserEncoderPipeline(lang="eng_Latn")
 
 
 def accuracy(src_sentence: str, trg_sentence: str) -> dict:
@@ -66,23 +68,11 @@ def __get_bertscore(src_sentence: str, trg_sentence: str) -> float:
         float: The BERTScore.
     """
     # Tokenize and generate embeddings
-    inputs_src = tokenizer(
-        src_sentence, return_tensors="pt", padding=True, truncation=True
-    )
-    inputs_trg = tokenizer(
-        trg_sentence, return_tensors="pt", padding=True, truncation=True
-    )
-
-    with torch.no_grad():
-        outputs_src = model(**inputs_src)
-        outputs_trg = model(**inputs_trg)
-
-    # Get sentence embeddings by averaging token embeddings (from last hidden state)
-    src_embedding = torch.mean(outputs_src.last_hidden_state, dim=1).squeeze().numpy()
-    trg_embedding = torch.mean(outputs_trg.last_hidden_state, dim=1).squeeze().numpy()
+    emb_src = de_encoder.encode_sentences([src_sentence])[0]
+    emb_tgt = en_encoder.encode_sentences([trg_sentence])[0]
 
     # Calculate cosine similarity (1 - cosine distance)
-    similarity = 1 - cosine(src_embedding, trg_embedding)
+    similarity = 1 - cosine(emb_src, emb_tgt)
 
     return similarity
 
@@ -122,8 +112,8 @@ def __get_alignment_score(src_sentence: str, trg_sentence: str) -> list:
     # Each method has a list of pairs indicating the indexes of aligned words (The alignments are zero-indexed).
     alignments = aligner.get_word_aligns(src_list, trg_list)
 
-    src_aligns = {x[0] for x in alignments["inter"]}
-    trg_aligns = {x[1] for x in alignments["inter"]}
+    src_aligns = {x[0] for x in alignments["mwmf"]}
+    trg_aligns = {x[1] for x in alignments["mwmf"]}
 
     mistranslations = []
     for i in range(len(src_list)):
