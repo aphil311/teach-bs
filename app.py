@@ -14,7 +14,7 @@ Navbar()
 # Load translations from a JSON file to be used by the bot
 def load_translations():
     try:
-        with open("./translations.json", "r") as f:
+        with open("./data/translations.json", "r") as f:
             return json.loads(f.read())
     except Exception as e:
         print(e)

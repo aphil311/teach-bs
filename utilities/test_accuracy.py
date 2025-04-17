@@ -4,7 +4,7 @@ import csv
 from tqdm import tqdm
 
 try:
-    with open("./translations.json", "r") as f:
+    with open("../data/translations.json", "r") as f:
         translations = json.loads(f.read())
 except Exception as e:
     print(e)
