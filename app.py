@@ -21,6 +21,17 @@ def load_translations():
         return None
 
 
+def score(score):
+    if score > 90:
+        return "excellent!"
+    elif score > 80:
+        return "good."
+    elif score > 70:
+        return "fair."
+    else:
+        return "poor."
+
+
 if "translations" not in st.session_state:
     st.session_state.translations = load_translations()
 
@@ -37,17 +48,17 @@ def response_generator(prompt):
         st.session_state.scores = []
     st.session_state.scores.append(total_score)
 
-    response = "Your total translation score is: " + str(total_score) + "\n"
+    response = f"Your translation quality was {score(total_score)}\n\n"
 
     acc_s = acc["score"]
-    response += f"\nYour accuracy score is {acc_s}:\n"
+    response += f"\nYour accuracy score is {score(acc_s)}:\n"
 
     for error in acc["errors"]:
         response += f" - {error['message']}\n"
 
     gre_s = gre["score"]
     ppl_s = ppl["score"]
-    response += f"\nYour fluency score is {0.4 * gre_s + 0.6 * ppl_s}:\n"
+    response += f"\nYour fluency score is {score(0.4 * gre_s + 0.6 * ppl_s)}\n"
 
     for error in gre["errors"]:
         response += f" - {error['message']}\n"
