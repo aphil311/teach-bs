@@ -7,9 +7,11 @@ from categories.accuracy import *
 from categories.fluency import *
 import random
 
-# Set the sidebar title
-st.sidebar.title("DE-EN")
+from modules.nav import Navbar
 
+Navbar()
+
+# Load translations from a JSON file to be used by the bot
 def load_translations():
     try:
         with open("./translations.json", "r") as f:
@@ -18,8 +20,10 @@ def load_translations():
         print(e)
         return None
 
+
 if "translations" not in st.session_state:
     st.session_state.translations = load_translations()
+
 
 def response_generator(prompt):
     source = st.session_state.german
@@ -29,6 +33,10 @@ def response_generator(prompt):
 
     total_score = 0.5 * acc["score"] + 0.2 * gre["score"] + 0.3 * ppl["score"]
 
+    if "scores" not in st.session_state:
+        st.session_state.scores = []
+    st.session_state.scores.append(total_score)
+
     response = "Your total translation score is: " + str(total_score) + "\n"
 
     acc_s = acc["score"]
@@ -36,14 +44,14 @@ def response_generator(prompt):
 
     for error in acc["errors"]:
         response += f" - {error['message']}\n"
-    
+
     gre_s = gre["score"]
     ppl_s = ppl["score"]
     response += f"\nYour fluency score is {0.4 * gre_s + 0.6 * ppl_s}:\n"
 
     for error in gre["errors"]:
         response += f" - {error['message']}\n"
-    
+
     for error in ppl["errors"]:
         response += f" - {error['message']}\n"
 
@@ -65,7 +73,6 @@ def translation_generator():
         st.error("No translations available.")
         return
 
-
     message = (
         f"Please translate the following sentence into English:"
         f" {st.session_state.german}"
@@ -79,8 +86,6 @@ def translation_generator():
         # After each line, yield a newline character or trigger a line break in Markdown
         yield "\n"
 
-
-st.title("Translation bot")
 
 # Initialize chat history
 if "messages" not in st.session_state:
@@ -103,7 +108,9 @@ if "translations" not in st.session_state:
     except (FileNotFoundError, json.JSONDecodeError):
         st.session_state.translations = None
         # Create an empty translations dictionary if none exists
-        st.error("No previous translations found. Starting with an empty translation history.")
+        st.error(
+            "No previous translations found. Starting with an empty translation history."
+        )
 
 # Display chat messages from history on app rerun
 for message in st.session_state.messages:
