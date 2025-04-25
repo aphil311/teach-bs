@@ -1,15 +1,16 @@
-import time
 import json
+import random
+import time
 
 import streamlit as st
 
 from categories.accuracy import *
 from categories.fluency import *
-import random
-
+from categories.style import *
 from modules.nav import Navbar
 
 Navbar()
+
 
 # Load translations from a JSON file to be used by the bot
 def load_translations():
@@ -41,8 +42,14 @@ def response_generator(prompt):
     acc = accuracy(source, prompt)
     ppl = pseudo_perplexity(prompt)
     gre = grammar_errors(prompt)
+    frm = formality(source, prompt)
 
-    total_score = 0.5 * acc["score"] + 0.2 * gre["score"] + 0.3 * ppl["score"]
+    total_score = (
+        0.5 * acc["score"]
+        + 0.2 * gre["score"]
+        + 0.3 * ppl["score"]
+        + 0.005 * frm["score"]
+    )
 
     if "scores" not in st.session_state:
         st.session_state.scores = []

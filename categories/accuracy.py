@@ -1,11 +1,11 @@
 import string
 
-import torch
 import numpy as np
+import torch
+from laser_encoders import LaserEncoderPipeline
 from scipy.spatial.distance import cosine
 from simalign import SentenceAligner
 from transformers import AutoModel, AutoTokenizer
-from laser_encoders import LaserEncoderPipeline
 
 # setup global variables on import (bad practice, but whatever)
 # --------------------------------------------------------------
@@ -94,7 +94,10 @@ def __bertscore_to_percentage(similarity: float, debug: bool = False) -> float:
     if debug:
         scaled_score = similarity
     else:
-        scaled_score = max(100 / (1 + np.exp(-11 * (similarity - 0.60))), 100 / (1 + np.exp(-5 * (similarity - 0.60))))
+        scaled_score = max(
+            100 / (1 + np.exp(-11 * (similarity - 0.60))),
+            100 / (1 + np.exp(-5 * (similarity - 0.60))),
+        )
 
     # scaled_score = similarity
     return round(scaled_score, 2)
