@@ -138,7 +138,7 @@ def pseudo_perplexity(text: str, threshold: int = 4, max_len: int = 128) -> dict
             {
                 "start": i,
                 "end": i,
-                "message": f"Adjusted liklihood {l} over threshold {threshold}",
+                "message": f"Adjusted liklihood {round(l, 2)} over threshold {threshold} for word {text.split()[i]}",
             }
         )
 

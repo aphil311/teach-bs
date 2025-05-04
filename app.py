@@ -24,9 +24,9 @@ def load_translations():
 def score(score):
     if score > 90:
         return "excellent!"
-    elif score > 80:
-        return "good."
     elif score > 70:
+        return "good."
+    elif score > 50:
         return "fair."
     else:
         return "poor."
