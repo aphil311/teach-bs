@@ -73,6 +73,16 @@ def response_generator(prompt):
     for error in ppl["errors"]:
         response += f" - {error['message']}\n"
 
+    frm_s = frm["normalized"]
+    response += f"\nYour formality score is {score(frm_s)}:\n"
+
+    if frm["src_label"] != frm["trg_label"]:
+        response += (
+            f"\n Tone mismatch: "
+            f"your translation is “{frm['trg_label']}”\n"
+            f"but likely should be “{frm['src_label']}” "
+        )
+
     lines = response.split("\n")
     for line in lines:
         for word in line.split():
