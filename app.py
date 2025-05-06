@@ -58,7 +58,7 @@ def response_generator(prompt):
     response = f"Your translation quality was {score(total_score)}\n\n"
 
     acc_s = acc["score"]
-    response += f"\nYour accuracy score is {score(acc_s)}:\n"
+    response += f"\nYour accuracy score is {score(acc_s)}\n"
 
     for error in acc["errors"]:
         response += f" - {error['message']}\n"
@@ -74,13 +74,13 @@ def response_generator(prompt):
         response += f" - {error['message']}\n"
 
     frm_s = frm["normalized"]
-    response += f"\nYour formality score is {score(frm_s)}:\n"
+    response += f"\nYour formality score is {score(frm_s)}\n"
 
     if frm["src_label"] != frm["trg_label"]:
         response += (
-            f"\n Tone mismatch: "
+            f"\n - Tone mismatch: "
             f"your translation is “{frm['trg_label']}”\n"
-            f"but likely should be “{frm['src_label']}” "
+            f"but likely should be “{frm['src_label']}”. "
         )
 
     lines = response.split("\n")
