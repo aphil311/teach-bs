@@ -48,7 +48,7 @@ def response_generator(prompt):
         0.5 * acc["score"]
         + 0.2 * gre["score"]
         + 0.3 * ppl["score"]
-        + 0.005 * frm["score"]
+        + 0.005 * frm["normalized"]
     )
 
     if "scores" not in st.session_state:
