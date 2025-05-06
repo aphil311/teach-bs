@@ -4,13 +4,13 @@ from pathlib import Path
 
 import numpy as np
 from scipy.optimize import least_squares
+
 # from categories.accuracy import get_bertscore
 # from categories.fluency import ppll_loss, grammar_errors
 
 
 def sigma(x, k, mu):
     return 100.0 / (1.0 + np.exp(-k * (x - mu)))
-
 
 
 def load_dataset(fp):
@@ -45,11 +45,13 @@ def build_arrays(data):
         flu_targets.append(ex["fluency"])
 
     # to numpy
-    return (np.array(s_cos),
-            np.array(J, dtype=float),
-            np.array(G, dtype=float),
-            np.array(acc_targets, dtype=float),
-            np.array(flu_targets, dtype=float))
+    return (
+        np.array(s_cos),
+        np.array(J, dtype=float),
+        np.array(G, dtype=float),
+        np.array(acc_targets, dtype=float),
+        np.array(flu_targets, dtype=float),
+    )
 
 
 def fit_accuracy(s_cos, acc_target):
@@ -60,12 +62,8 @@ def fit_accuracy(s_cos, acc_target):
         pred = lam * s1 + (1 - lam) * s2
         return pred - y
 
-
     init = [0.5, 5.0, 0.6, 11.0, 0.6]
-    bounds = (
-        [0.2, 1.0, 0.4, 5.0, 0.4], 
-        [0.8, 11.0, 0.8, 20.0, 0.8]
-    )
+    bounds = ([0.2, 1.0, 0.4, 5.0, 0.4], [0.8, 11.0, 0.8, 20.0, 0.8])
 
     res = least_squares(resid, init, args=(s_cos, acc_target), bounds=bounds)
     lam, k1, mu1, k2, mu2 = res.x
@@ -78,13 +76,12 @@ def fit_fluency(J, G, flu_target):
     def resid(params, J_, G_, y):
         lam, kP, muP, kG, muG = params
         P = sigma(J_, kP, muP)
-        G = sigma(G_, kG, muG) 
+        G = sigma(G_, kG, muG)
         pred = lam * P + (1 - lam) * G
         return pred - y
 
     init = [0.5, 0.1, 5.0, 0.1, 5.0]
-    bounds = ([0.2, 0, 0, 0, 0], 
-              [1, np.inf, np.inf, np.inf, np.inf]) 
+    bounds = ([0.2, 0, 0, 0, 0], [1, np.inf, np.inf, np.inf, np.inf])
     res = least_squares(resid, init, args=(J, G, flu_target), bounds=bounds)
     lam, kP, muP, kG, muG = res.x
     return dict(lambda_F=lam, k_P=kP, mu_P=muP, k_G=kG, mu_G=muG)
@@ -107,10 +104,7 @@ def main(in_path, out_path):
     acc_params = {k: round(v, 2) for k, v in acc_params.items()}
     flu_params = {k: round(v, 2) for k, v in flu_params.items()}
 
-    params = {
-        "accuracy_params": acc_params,
-        "fluency_params": flu_params
-    }
+    params = {"accuracy_params": acc_params, "fluency_params": flu_params}
 
     Path(out_path).write_text(json.dumps(params, indent=2))
     print("Saved parameters to", out_path)

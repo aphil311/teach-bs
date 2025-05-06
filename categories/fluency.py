@@ -235,7 +235,7 @@ def __check_structural_grammar(text: str) -> list:
     doc = nlp(text)
     issues = []
 
-    # 1. Missing main verb (ROOT)
+    # Missing main verb (ROOT)
     root_verbs = [
         tok for tok in doc if tok.dep_ == "ROOT" and tok.pos_ in {"VERB", "AUX"}
     ]
@@ -250,7 +250,7 @@ def __check_structural_grammar(text: str) -> list:
             }
         )
 
-    # 2. Verb(s) present but no subject
+    # Verb(s) present but no subject
     verbs = [tok for tok in doc if tok.pos_ in {"VERB", "AUX"}]
     subjects = [tok for tok in doc if tok.dep_ in {"nsubj", "nsubjpass"}]
     if verbs and not subjects:
@@ -263,7 +263,7 @@ def __check_structural_grammar(text: str) -> list:
                 }
             )
 
-    # 3. Dangling prepositions
+    # Dangling prepositions
     for tok in doc:
         if tok.pos_ == "ADP" and len(list(tok.children)) == 0:
             issues.append(
@@ -274,7 +274,7 @@ def __check_structural_grammar(text: str) -> list:
                 }
             )
 
-    # 4. Noun pile-up (no verbs, all tokens are nominal)
+    # Noun pile-up (no verbs, all tokens are nominal)
     if not any(tok.pos_ in {"VERB", "AUX"} for tok in doc) and all(
         tok.pos_ in {"NOUN", "PROPN", "ADJ", "DET", "NUM"}
         for tok in doc

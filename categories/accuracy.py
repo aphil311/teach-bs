@@ -7,7 +7,7 @@ from scipy.spatial.distance import cosine
 from simalign import SentenceAligner
 from transformers import AutoModel, AutoTokenizer
 
-# setup global variables on import (bad practice, but whatever)
+# setup global variables on import
 # --------------------------------------------------------------
 
 aligner = SentenceAligner(model="distilbert-base-multilingual-cased", layer=6)
