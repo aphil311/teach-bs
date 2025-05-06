@@ -1,0 +1,1082 @@
+[
+  {
+    "german": "Ich bin müde.",
+    "english": "I feel tired.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I am feeling a bit fatigued.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I am quite sleepy.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I am very energetic today.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "The weather is quite pleasant.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I just finished a great book.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "Tired I am the.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "Muddy is the shoe tired.",
+    "accuracy": 40,
+    "fluency": 85
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "Sleepy birds fly quickly.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "This is your book.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "That is my notebook.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "This is a book of mine.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "I love to read novels.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "She borrowed a pencil from me.",
+    "accuracy": 40,
+    "fluency": 40
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "We went to the park yesterday.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "Is my book that this.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "Book my is this.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "This my book is not.",
+    "accuracy": 40,
+    "fluency": 85
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "He has a dog.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "He owns a pet dog.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "He possesses a canine.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "She enjoys reading books.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "They went to the park yesterday.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "The car broke down on the highway.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "He dog a has.",
+    "accuracy": 85,
+    "fluency": 40
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "Has a dog he.",
+    "accuracy": 70,
+    "fluency": 40
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "Dog he has a the.",
+    "accuracy": 70,
+    "fluency": 40
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "We are heading home.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "We are going back.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "We will return to our house.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "They are playing in the park.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "She is cooking dinner.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "I just bought a new car.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "Home we go nach.",
+    "accuracy": 85,
+    "fluency": 85
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "Going home is we.",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "House to the we are.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "She is reading a novel.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "She reads a book every night.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "She is currently reading a story.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "He plays soccer with his friends.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "The cat jumped off the table.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "They went to the park for a picnic.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "Book she reads is the.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "A reads book she.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "She book a read is.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "I really enjoy chocolate.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "Chocolate is my favorite treat.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "I have a strong fondness for chocolate.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "I dislike vegetables.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "Cats are my favorite animals.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "I prefer ice cream over all desserts.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "Schokolade love I.",
+    "accuracy": 70,
+    "fluency": 85
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "Chocolate is loves I.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "I chocolate love very much.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "Do you have any siblings?",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "Are you the only child in your family?",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "How many brothers or sisters do you have?",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "What time is it today?",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "I enjoy reading books in my free time.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "The weather is quite nice this week.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "Siblings have you do?",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "I sibling like a fish on a tree.",
+    "accuracy": 40,
+    "fluency": 40
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "Do you sibling jump over moon?",
+    "accuracy": 40,
+    "fluency": 40
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "Today is chilly.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "It is cold outside today.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "The weather is quite cold today.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "I have a meeting later today.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "She enjoys reading books in the evening.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "The flowers are blooming beautifully this spring.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "Cold is today it.",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "Today is the cold weather very.",
+    "accuracy": 85,
+    "fluency": 85
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "Kittens play and it is snowing.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Where is the train station located?",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Can you tell me the direction to the railway station?",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Is the bus station near the train station?",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "The park is beautiful this time of year.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "I love eating pizza on Fridays.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "The cat chased the mouse around the house.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Where is the train stop?",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Is train the where?",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Station the where is?",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "The weather is lovely today.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "It is a nice day outside.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "The weather feels pleasant.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "I enjoy reading books on the weekend.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "The sun sets in the west every evening.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "She loves to travel to new countries.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "Weather beautiful is the.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "Sunshine many flowers dance.",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "Outside sky blue fluffy.",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "He works in an office.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "He is employed at a desk job.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "He has a job in a corporate environment.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "She enjoys painting in her free time.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "They went hiking in the mountains last weekend.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "The cat chased a mouse around the house.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "He office works in the.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "Desk job he is at the, fun!",
+    "accuracy": 85,
+    "fluency": 40
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "Office he the works do.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "I drink water every day.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "I enjoy drinking water.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "I often have water with my meals.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "I eat bread for breakfast.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "She prefers tea over coffee.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "They are going to the market.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "Water I drink the fish.",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "Trinking water is goodly for health.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "Watter is a drik I like.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "She enjoys dancing.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "She loves to dance.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "She often participates in dance.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "He plays football every weekend.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "They are reading a book together.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "The sun sets in the west.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "Dance she likes.",
+    "accuracy": 85,
+    "fluency": 85
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "Enjoys she dancing much.",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "She dance like a fish.",
+    "accuracy": 70,
+    "fluency": 85
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "Can you assist me?",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "Could you lend me a hand?",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "Would you be able to help me out?",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "I enjoy reading books in my free time.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "The weather is nice today for a picnic.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "She loves to travel around the world.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "Help can you me?",
+    "accuracy": 85,
+    "fluency": 85
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "You me help can?",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "Can help you me do?",
+    "accuracy": 85,
+    "fluency": 85
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "We are playing soccer.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "We are having a soccer game.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "We play football regularly.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "I enjoy reading books.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "She is cooking dinner tonight.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "They went for a swim at the beach.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "Soccer we play the ball.",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "Football is play running fast.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "We playing fun the sport.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "The car is brand new.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "This vehicle is recently purchased.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "The automobile is in pristine condition.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "The bicycle is old.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "He drives a truck.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "The engine needs repair.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "Car new is the.",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "Auto very fastly.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "New car is the blue.",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "I'm feeling hungry right now.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "I could really use some food.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "I haven't eaten in a while.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "The sun is shining brightly today.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "I enjoy reading books in my free time.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "She is going to the store later.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "Hunger I have very much.",
+    "accuracy": 100,
+    "fluency": 70
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "Food is what I want now.",
+    "accuracy": 100,
+    "fluency": 85
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "Eat I must food, very hungry.",
+    "accuracy": 100,
+    "fluency": 85
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Good morning to you!",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Hello, good morning!",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Wishing you a wonderful morning!",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "I had a great breakfast today.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "The sun is shining brightly.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "I will go for a walk later.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Morning good!",
+    "accuracy": 85,
+    "fluency": 85
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Sunrise is morning!",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Goodly morning the sky!",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "He is fluent in German.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "He can communicate in German.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "He knows how to speak German.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "She loves to play the piano.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "They are going to the park tomorrow.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "The weather is nice today.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "He speak German yes.",
+    "accuracy": 85,
+    "fluency": 70
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "Deutsch he is speaking.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "He speaks cat and dog.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "I like cats a lot.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "I enjoy being around cats.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "Cats are my favorite animals.",
+    "accuracy": 85,
+    "fluency": 100
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "I dislike dogs.",
+    "accuracy": 70,
+    "fluency": 100
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "I prefer to watch movies.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "I am learning to cook.",
+    "accuracy": 40,
+    "fluency": 100
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "Cats like I mag.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "Kittens are I enjoy.",
+    "accuracy": 70,
+    "fluency": 70
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "Like cats I mag very much.",
+    "accuracy": 70,
+    "fluency": 70
+  }
+]

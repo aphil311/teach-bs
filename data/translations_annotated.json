@@ -1,0 +1,1622 @@
+[
+  {
+    "german": "Ich bin müde.",
+    "english": "I feel tired.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.9056,
+    "fluency_score": 80.78,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I am feeling a bit fatigued.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.7388,
+    "fluency_score": 84.73,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I am quite sleepy.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.761,
+    "fluency_score": 85.92,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I am very energetic today.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.443,
+    "fluency_score": 84.09,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "The weather is quite pleasant.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.431,
+    "fluency_score": 85.14,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I just finished a great book.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3155,
+    "fluency_score": 81.44,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "Tired I am the.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.7373,
+    "fluency_score": 71.36,
+    "grammar_score": 50.0
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "Muddy is the shoe tired.",
+    "accuracy": 20,
+    "fluency": 85,
+    "bertscore": 0.5082,
+    "fluency_score": 76.2,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "Sleepy birds fly quickly.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3564,
+    "fluency_score": 85.28,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "This is your book.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.917,
+    "fluency_score": 81.61,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "That is my notebook.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.8166,
+    "fluency_score": 78.76,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "This is a book of mine.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8546,
+    "fluency_score": 81.04,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "I love to read novels.",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.4552,
+    "fluency_score": 79.84,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "She borrowed a pencil from me.",
+    "accuracy": 20,
+    "fluency": 40,
+    "bertscore": 0.4651,
+    "fluency_score": 80.49,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "We went to the park yesterday.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3677,
+    "fluency_score": 82.62,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "Is my book that this.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.8097,
+    "fluency_score": 69.15,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "Book my is this.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.7963,
+    "fluency_score": 56.66,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Das ist mein Buch.",
+    "english": "This my book is not.",
+    "accuracy": 85,
+    "fluency": 85,
+    "bertscore": 0.7938,
+    "fluency_score": 65.3,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "He has a dog.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.9785,
+    "fluency_score": 84.87,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "He owns a pet dog.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.8445,
+    "fluency_score": 85.04,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "He possesses a canine.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.7525,
+    "fluency_score": 72.69,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "She enjoys reading books.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4203,
+    "fluency_score": 82.87,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "They went to the park yesterday.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3793,
+    "fluency_score": 82.91,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "The car broke down on the highway.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3462,
+    "fluency_score": 83.64,
+    "grammar_score": 85.71
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "He dog a has.",
+    "accuracy": 85,
+    "fluency": 40,
+    "bertscore": 0.7074,
+    "fluency_score": 58.22,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "Has a dog he.",
+    "accuracy": 100,
+    "fluency": 40,
+    "bertscore": 0.9015,
+    "fluency_score": 69.67,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Er hat einen Hund.",
+    "english": "Dog he has a the.",
+    "accuracy": 70,
+    "fluency": 40,
+    "bertscore": 0.7406,
+    "fluency_score": 56.69,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "We are heading home.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8811,
+    "fluency_score": 81.66,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "We are going back.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.7237,
+    "fluency_score": 88.22,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "We will return to our house.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.7922,
+    "fluency_score": 89.94,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "They are playing in the park.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4349,
+    "fluency_score": 81.55,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "She is cooking dinner.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.441,
+    "fluency_score": 82.76,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "I just bought a new car.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3225,
+    "fluency_score": 85.09,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "Home we go nach.",
+    "accuracy": 85,
+    "fluency": 85,
+    "bertscore": 0.7971,
+    "fluency_score": 68.56,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "Going home is we.",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.826,
+    "fluency_score": 70.47,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir gehen nach Hause.",
+    "english": "House to the we are.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.569,
+    "fluency_score": 56.51,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "She is reading a novel.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.8937,
+    "fluency_score": 85.44,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "She reads a book every night.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.7523,
+    "fluency_score": 86.68,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "She is currently reading a story.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.7738,
+    "fluency_score": 88.53,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "He plays soccer with his friends.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4299,
+    "fluency_score": 88.81,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "The cat jumped off the table.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3588,
+    "fluency_score": 82.29,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "They went to the park for a picnic.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4386,
+    "fluency_score": 84.25,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "Book she reads is the.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.6524,
+    "fluency_score": 68.96,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "A reads book she.",
+    "accuracy": 100,
+    "fluency": 70,
+    "bertscore": 0.8387,
+    "fluency_score": 60.83,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Sie liest ein Buch.",
+    "english": "She book a read is.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.8087,
+    "fluency_score": 56.33,
+    "grammar_score": 60.0
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "I really enjoy chocolate.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8496,
+    "fluency_score": 81.53,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "Chocolate is my favorite treat.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.6169,
+    "fluency_score": 83.12,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "I have a strong fondness for chocolate.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.6278,
+    "fluency_score": 83.35,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "I dislike vegetables.",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.6291,
+    "fluency_score": 62.03,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "Cats are my favorite animals.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3992,
+    "fluency_score": 84.81,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "I prefer ice cream over all desserts.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.5357,
+    "fluency_score": 81.76,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "Schokolade love I.",
+    "accuracy": 70,
+    "fluency": 85,
+    "bertscore": 0.7726,
+    "fluency_score": 53.86,
+    "grammar_score": 0.0
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "Chocolate is loves I.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.7813,
+    "fluency_score": 57.29,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich liebe Schokolade.",
+    "english": "I chocolate love very much.",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.8363,
+    "fluency_score": 72.22,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "Do you have any siblings?",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.9017,
+    "fluency_score": 85.68,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "Are you the only child in your family?",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.5667,
+    "fluency_score": 88.2,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "How many brothers or sisters do you have?",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.645,
+    "fluency_score": 89.68,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "What time is it today?",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3428,
+    "fluency_score": 80.34,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "I enjoy reading books in my free time.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3309,
+    "fluency_score": 79.33,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "The weather is quite nice this week.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.2334,
+    "fluency_score": 85.2,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "Siblings have you do?",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.7947,
+    "fluency_score": 76.49,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "I sibling like a fish on a tree.",
+    "accuracy": 20,
+    "fluency": 40,
+    "bertscore": 0.3498,
+    "fluency_score": 78.98,
+    "grammar_score": 87.5
+  },
+  {
+    "german": "Hast du Geschwister?",
+    "english": "Do you sibling jump over moon?",
+    "accuracy": 20,
+    "fluency": 40,
+    "bertscore": 0.4275,
+    "fluency_score": 80.06,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "Today is chilly.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.6858,
+    "fluency_score": 79.05,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "It is cold outside today.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8582,
+    "fluency_score": 74.7,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "The weather is quite cold today.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.826,
+    "fluency_score": 87.16,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "I have a meeting later today.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4486,
+    "fluency_score": 76.65,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "She enjoys reading books in the evening.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3224,
+    "fluency_score": 87.02,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "The flowers are blooming beautifully this spring.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3984,
+    "fluency_score": 83.39,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "Cold is today it.",
+    "accuracy": 100,
+    "fluency": 70,
+    "bertscore": 0.9173,
+    "fluency_score": 61.86,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "Today is the cold weather very.",
+    "accuracy": 85,
+    "fluency": 85,
+    "bertscore": 0.6726,
+    "fluency_score": 84.1,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Heute ist es kalt.",
+    "english": "Kittens play and it is snowing.",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.395,
+    "fluency_score": 70.42,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Where is the train station located?",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8299,
+    "fluency_score": 89.12,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Can you tell me the direction to the railway station?",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.6121,
+    "fluency_score": 84.66,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Is the bus station near the train station?",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.6568,
+    "fluency_score": 86.54,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "The park is beautiful this time of year.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3722,
+    "fluency_score": 77.13,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "I love eating pizza on Fridays.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.2883,
+    "fluency_score": 73.34,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "The cat chased the mouse around the house.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3881,
+    "fluency_score": 83.65,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Where is the train stop?",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.7745,
+    "fluency_score": 83.5,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Is train the where?",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.6788,
+    "fluency_score": 53.29,
+    "grammar_score": 50.0
+  },
+  {
+    "german": "Wo ist der Bahnhof?",
+    "english": "Station the where is?",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.8025,
+    "fluency_score": 52.54,
+    "grammar_score": 50.0
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "The weather is lovely today.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8454,
+    "fluency_score": 75.17,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "It is a nice day outside.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.6786,
+    "fluency_score": 81.59,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "The weather feels pleasant.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8542,
+    "fluency_score": 78.94,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "I enjoy reading books on the weekend.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3286,
+    "fluency_score": 82.5,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "The sun sets in the west every evening.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3676,
+    "fluency_score": 82.2,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "She loves to travel to new countries.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3115,
+    "fluency_score": 85.74,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "Weather beautiful is the.",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.8861,
+    "fluency_score": 55.66,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "Sunshine many flowers dance.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.4065,
+    "fluency_score": 58.41,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Das Wetter ist schön.",
+    "english": "Outside sky blue fluffy.",
+    "accuracy": 20,
+    "fluency": 70,
+    "bertscore": 0.3248,
+    "fluency_score": 73.21,
+    "grammar_score": 50.0
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "He works in an office.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8924,
+    "fluency_score": 81.41,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "He is employed at a desk job.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.6935,
+    "fluency_score": 85.72,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "He has a job in a corporate environment.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.5979,
+    "fluency_score": 86.73,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "She enjoys painting in her free time.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4658,
+    "fluency_score": 79.79,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "They went hiking in the mountains last weekend.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4361,
+    "fluency_score": 81.61,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "The cat chased a mouse around the house.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4254,
+    "fluency_score": 83.83,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "He office works in the.",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.8362,
+    "fluency_score": 61.61,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "Desk job he is at the, fun!",
+    "accuracy": 70,
+    "fluency": 40,
+    "bertscore": 0.5169,
+    "fluency_score": 68.42,
+    "grammar_score": 71.43
+  },
+  {
+    "german": "Er arbeitet im Büro.",
+    "english": "Office he the works do.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.6202,
+    "fluency_score": 54.84,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "I drink water every day.",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.7962,
+    "fluency_score": 86.29,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "I enjoy drinking water.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.858,
+    "fluency_score": 77.91,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "I often have water with my meals.",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.6232,
+    "fluency_score": 74.21,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "I eat bread for breakfast.",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.6404,
+    "fluency_score": 77.69,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "She prefers tea over coffee.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.5756,
+    "fluency_score": 76.18,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "They are going to the market.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4442,
+    "fluency_score": 82.37,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "Water I drink the fish.",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.805,
+    "fluency_score": 69.64,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "Trinking water is goodly for health.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.5804,
+    "fluency_score": 80.08,
+    "grammar_score": 83.33
+  },
+  {
+    "german": "Ich trinke Wasser.",
+    "english": "Watter is a drik I like.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.589,
+    "fluency_score": 70.77,
+    "grammar_score": 66.67
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "She enjoys dancing.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8485,
+    "fluency_score": 82.25,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "She loves to dance.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8933,
+    "fluency_score": 86.63,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "She often participates in dance.",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.7092,
+    "fluency_score": 86.73,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "He plays football every weekend.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4114,
+    "fluency_score": 89.04,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "They are reading a book together.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3361,
+    "fluency_score": 87.54,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "The sun sets in the west.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3403,
+    "fluency_score": 80.53,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "Dance she likes.",
+    "accuracy": 85,
+    "fluency": 85,
+    "bertscore": 0.8097,
+    "fluency_score": 70.11,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "Enjoys she dancing much.",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.7211,
+    "fluency_score": 67.83,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Sie tanzt gerne.",
+    "english": "She dance like a fish.",
+    "accuracy": 70,
+    "fluency": 85,
+    "bertscore": 0.6112,
+    "fluency_score": 72.95,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "Can you assist me?",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.9705,
+    "fluency_score": 78.26,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "Could you lend me a hand?",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.7241,
+    "fluency_score": 83.96,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "Would you be able to help me out?",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8464,
+    "fluency_score": 84.2,
+    "grammar_score": 87.5
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "I enjoy reading books in my free time.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.2545,
+    "fluency_score": 79.33,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "The weather is nice today for a picnic.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.2351,
+    "fluency_score": 77.33,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "She loves to travel around the world.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.2709,
+    "fluency_score": 89.86,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "Help can you me?",
+    "accuracy": 100,
+    "fluency": 85,
+    "bertscore": 0.9333,
+    "fluency_score": 65.76,
+    "grammar_score": 50.0
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "You me help can?",
+    "accuracy": 100,
+    "fluency": 70,
+    "bertscore": 0.9059,
+    "fluency_score": 65.16,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Kannst du mir helfen?",
+    "english": "Can help you me do?",
+    "accuracy": 85,
+    "fluency": 85,
+    "bertscore": 0.8253,
+    "fluency_score": 75.13,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "We are playing soccer.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.9538,
+    "fluency_score": 86.65,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "We are having a soccer game.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.8279,
+    "fluency_score": 85.65,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "We play football regularly.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.8486,
+    "fluency_score": 84.96,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "I enjoy reading books.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4431,
+    "fluency_score": 76.08,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "She is cooking dinner tonight.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4159,
+    "fluency_score": 79.54,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "They went for a swim at the beach.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3874,
+    "fluency_score": 78.37,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "Soccer we play the ball.",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.8177,
+    "fluency_score": 72.62,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "Football is play running fast.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.6493,
+    "fluency_score": 71.65,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Wir spielen Fußball.",
+    "english": "We playing fun the sport.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.7375,
+    "fluency_score": 69.24,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "The car is brand new.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8668,
+    "fluency_score": 83.82,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "This vehicle is recently purchased.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.6126,
+    "fluency_score": 88.48,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "The automobile is in pristine condition.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.5702,
+    "fluency_score": 83.7,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "The bicycle is old.",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.6656,
+    "fluency_score": 76.76,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "He drives a truck.",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.5613,
+    "fluency_score": 87.05,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "The engine needs repair.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.5078,
+    "fluency_score": 82.69,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "Car new is the.",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.7877,
+    "fluency_score": 59.98,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "Auto very fastly.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.645,
+    "fluency_score": 67.33,
+    "grammar_score": 33.33
+  },
+  {
+    "german": "Das Auto ist neu.",
+    "english": "New car is the blue.",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.7703,
+    "fluency_score": 68.62,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "I'm feeling hungry right now.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.7556,
+    "fluency_score": 82.38,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "I could really use some food.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.4666,
+    "fluency_score": 83.59,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "I haven't eaten in a while.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.4744,
+    "fluency_score": 76.44,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "The sun is shining brightly today.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.2851,
+    "fluency_score": 84.32,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "I enjoy reading books in my free time.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3109,
+    "fluency_score": 79.33,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "She is going to the store later.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.2655,
+    "fluency_score": 78.41,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "Hunger I have very much.",
+    "accuracy": 100,
+    "fluency": 70,
+    "bertscore": 0.7517,
+    "fluency_score": 73.8,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "Food is what I want now.",
+    "accuracy": 85,
+    "fluency": 85,
+    "bertscore": 0.4484,
+    "fluency_score": 81.3,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich habe Hunger.",
+    "english": "Eat I must food, very hungry.",
+    "accuracy": 100,
+    "fluency": 85,
+    "bertscore": 0.6075,
+    "fluency_score": 67.61,
+    "grammar_score": 83.33
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Good morning to you!",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.888,
+    "fluency_score": 78.63,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Hello, good morning!",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.9254,
+    "fluency_score": 87.53,
+    "grammar_score": 66.67
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Wishing you a wonderful morning!",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.597,
+    "fluency_score": 76.69,
+    "grammar_score": 80.0
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "I had a great breakfast today.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3647,
+    "fluency_score": 79.4,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "The sun is shining brightly.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.2787,
+    "fluency_score": 86.53,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "I will go for a walk later.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.2663,
+    "fluency_score": 79.24,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Morning good!",
+    "accuracy": 85,
+    "fluency": 85,
+    "bertscore": 0.8778,
+    "fluency_score": 63.31,
+    "grammar_score": 0.0
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Sunrise is morning!",
+    "accuracy": 20,
+    "fluency": 70,
+    "bertscore": 0.4819,
+    "fluency_score": 67.21,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Guten Morgen!",
+    "english": "Goodly morning the sky!",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.6756,
+    "fluency_score": 75.45,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "He is fluent in German.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.7658,
+    "fluency_score": 86.69,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "He can communicate in German.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.7603,
+    "fluency_score": 84.71,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "He knows how to speak German.",
+    "accuracy": 100,
+    "fluency": 100,
+    "bertscore": 0.8199,
+    "fluency_score": 87.5,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "She loves to play the piano.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4006,
+    "fluency_score": 87.34,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "They are going to the park tomorrow.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.3525,
+    "fluency_score": 78.59,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "The weather is nice today.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.2895,
+    "fluency_score": 81.05,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "He speak German yes.",
+    "accuracy": 85,
+    "fluency": 70,
+    "bertscore": 0.7448,
+    "fluency_score": 81.69,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "Deutsch he is speaking.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.8571,
+    "fluency_score": 70.62,
+    "grammar_score": 50.0
+  },
+  {
+    "german": "Er spricht Deutsch.",
+    "english": "He speaks cat and dog.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.5807,
+    "fluency_score": 83.39,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "I like cats a lot.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.8305,
+    "fluency_score": 74.56,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "I enjoy being around cats.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.6962,
+    "fluency_score": 70.19,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "Cats are my favorite animals.",
+    "accuracy": 85,
+    "fluency": 100,
+    "bertscore": 0.5738,
+    "fluency_score": 84.81,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "I dislike dogs.",
+    "accuracy": 70,
+    "fluency": 100,
+    "bertscore": 0.7393,
+    "fluency_score": 68.45,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "I prefer to watch movies.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.5999,
+    "fluency_score": 78.77,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "I am learning to cook.",
+    "accuracy": 20,
+    "fluency": 100,
+    "bertscore": 0.4851,
+    "fluency_score": 80.45,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "Cats like I mag.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.7668,
+    "fluency_score": 65.14,
+    "grammar_score": 75.0
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "Kittens are I enjoy.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.7344,
+    "fluency_score": 60.87,
+    "grammar_score": 100.0
+  },
+  {
+    "german": "Ich mag Katzen.",
+    "english": "Like cats I mag very much.",
+    "accuracy": 70,
+    "fluency": 70,
+    "bertscore": 0.7686,
+    "fluency_score": 76.66,
+    "grammar_score": 50.0
+  }
+]

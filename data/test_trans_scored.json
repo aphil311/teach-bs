@@ -1,0 +1,56 @@
+[
+  {
+    "german": "Ich bin müde.",
+    "english": "I feel tired.",
+    "accuracy": 100,
+    "fluency": 100
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I am feeling exhausted.",
+    "accuracy": 85,
+    "fluency": 85
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I am quite sleepy.",
+    "accuracy": 85,
+    "fluency": 85
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I am happy.",
+    "accuracy": 40,
+    "fluency": 70
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I have a lot of energy.",
+    "accuracy": 40,
+    "fluency": 70
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "I am going for a run.",
+    "accuracy": 40,
+    "fluency": 70
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "Tired I am very much.",
+    "accuracy": 40,
+    "fluency": 40
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "Sleepy are the cats.",
+    "accuracy": 40,
+    "fluency": 70
+  },
+  {
+    "german": "Ich bin müde.",
+    "english": "Muffin runs fastly.",
+    "accuracy": 40,
+    "fluency": 85
+  }
+]
